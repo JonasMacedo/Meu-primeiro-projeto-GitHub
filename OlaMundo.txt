@@ -92,3 +92,12 @@ Como no exemplo abaixo:
 
 Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
 
+
+05- Relatorio de Commits.-------------------------------------------------------
+
+Se quiser, pode verificar todos os commits já feitos no projeto, 
+através do comando:
+-git log
+
+Obs.: Util para verificar se seu commit realmente foi realizado corretamente.
+
