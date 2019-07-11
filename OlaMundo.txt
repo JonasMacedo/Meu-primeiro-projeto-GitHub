@@ -20,4 +20,51 @@ possibilita também que os usuários relatem problemas e muito mais.
 Por que usar o git e o github juntos?
 Pense que o git é quem fará o controle das versões dos seus projetos, 
 e o github será apenas o local em que você irá hospedar essas versões,
- para tornar acessível a outras pessoas.
+para tornar acessível a outras pessoas.
+
+-------------------------------- Parte 01 ----------------------------------------------------------- 
+
+01- Usando o Git.
+
+Crie uma pasta com um nome qualquer, precisamos de alguma forma, 
+dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um repositório, 
+para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
+
+Por meio do terminal(CMD) ou do git-bash, vá até a pasta criada e dentro dela digite o comando:
+- git init
+
+E receberemos uma resposta parecida com essa:
+- Initialized empty Git repository in 
+	/home/"NomeDoUsuario"/Documentos/"NomeDaPastaCriada"/.git/
+
+Pronto! Criamos nosso primeiro repositório local e já podemos começar a trabalhar com o git, 
+em nossa máquina.
+
+02- Verificando.-------------------------------------------------------
+
+Para verifar o estado do(s) arquivo(s), se houve alterações ou não, usamos outro comando:
+- git status
+
+E receberemos uma resposta parecida com essa:
+-On branch master
+	Your branch is up to date with 'origin/master'.
+
+	Changes not staged for commit:
+  		(use "git add <file>..." to update what will be committed)
+  		(use "git checkout -- <file>..." to discard changes in working directory)
+
+        	modified:   SeuArquivo.txt
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+
+Esse comando nos permite verificar o status dos nossos arquivos.
+Os arquivos que estiverem em VERMELHO são arquivos que nunca foram salvos no git 
+ou que tiveram alteração e essa alteração ainda não foi salva.
+Se estiver verde, significa que já foi salvo.
+
+Se arquivo está em vermelho, significa que esse arquivo não foi salvo no git.
+para salvar basta utilizar o seguinte comando:
+- git add "NomeDoArquivo"
+
+Ou se quiser salvar todos os arquivos dentro da pasta:
+- git add .
