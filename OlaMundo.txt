@@ -93,7 +93,7 @@ Como no exemplo abaixo:
 Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
 
 
-05- Relatorio de Commits.-------------------------------------------------------
+05- Relatorio de Commits.-----------------------------------------------
 
 Se quiser, pode verificar todos os commits já feitos no projeto, 
 através do comando:
@@ -118,3 +118,32 @@ Comando: git commit -m"ComentárioExplicativoCurtoSobreCommit"
 
 4- Verificar os commits já feito no projeto.
 Comando: git log
+
+-------------------------------- Parte 02 ----------------------------------------------------------- 
+
+Conectando respositorio local com o GitHub.
+
+Agora vamos conectar o nosso repositório LOCAL(sua maquina pessoal), 
+com o nosso repositório do GitHub(Servidor em nuvem) podemos fazer isso 
+através do git.
+
+Então, abra seu terminal(CMD) novamente ou seu git-bash, entre na pasta em que está o projeto 
+e digite o comando a seguir:
+- git remote add origin <url do seu repositorio no git>
+
+Dessa forma nosso repositório local foi conectado ao nosso no github.
+Então vamos enviar nossos arquivos para o github, através do seguinte comando:
+- git push origin master
+
+O git irá pedir seu usuário e sua senha do Github, após digitar irá começar o upload. Feito isso 
+o arquivo estara hospedado no GitHub.
+
+01- Clonando respositorio.-----------------------------------------------
+
+Agora quando precisar baixar seu projeto basta ir no github clicar em “Clone or download”.
+
+Copiar a URL que aparecer e através do terminal(CMD) ou git-bash, entrar em uma pasta desejada 
+e digitar o comando:
+- git clone <url do clone de seu repositorio no git>
+Dessa forma o git irá fazer o download do projeto para o seu computador. Esse comando pode ser utilizado tanto nos seus repositórios, quanto nos repositórios públicos de outras pessoas.
+
