@@ -101,3 +101,20 @@ através do comando:
 
 Obs.: Util para verificar se seu commit realmente foi realizado corretamente.
 
+
+06- Resumo.-------------------------------------------------------
+
+Resumo rapido.
+
+1- Verifique o estado do arquivo, e veja o que acontece, se houve alguma alteração.
+Comando: git status
+
+2- Salve o arquivo ou projeto modificado ou novo, se necessario.
+Comando: git add "NomeDoArquivo" 
+Comando se quiser salvar todos os arquivos dentro da pasta: git add .
+
+3- Arquivo salvo, só resta realizar o commit, criando uma nova verção no Git.
+Comando: git commit -m"ComentárioExplicativoCurtoSobreCommit"
+
+4- Verificar os commits já feito no projeto.
+Comando: git log
