@@ -1,1 +1,5 @@
 Olá Mundo.
+Por que usar o git e o github juntos?
+Pense que o git é quem fará o controle das versões dos seus projetos, 
+e o github será apenas o local em que você irá hospedar essas versões,
+ para tornar acessível a outras pessoas.
