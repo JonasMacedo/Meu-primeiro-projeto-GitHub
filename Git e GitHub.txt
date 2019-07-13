@@ -152,7 +152,7 @@ de outras pessoas.
 
 -------------------------------- Parte 03 ----------------------------------------------------------- 
 
-Usando Branch.
+Conceito de Ramos "Branchs".
 
 Uma outra funcionalidade interessante do git são os ramos ou “Branchs”.
 Branchs são como ambientes de desenvolvimento diferentes para o mesmo projeto ou arquivo.
@@ -170,6 +170,8 @@ E ao final da atividade, realizar um pedido para adicionar as novas alterações d
 esse pedido passará por uma revisão e, só após a revisão, podera ser adicionado as alterações a master.
 
 Pode parecer complicado, mas verá que na verdade é bem simples.
+
+Usando Branchs. -----------------------------------------------
 
 Para criar nossa branch devemos dar um nome ela. 
 O comando deverá ficar assim:
@@ -206,11 +208,12 @@ Como dessa vez queremos utilizar nossa nova branch, o comando ficará assim:
 
 Parabéns, conseguimos hospedar o nosso código no github em nossa própria branch.
 Nesse momento, se entrar no Github em nosso repositório, poderemos ver que temos 2 branchs.
+
 Ótimo, agora nossa atividade está terminada e já podemos adicionar essas alterações a master sem culpa. 
 E podemos fazer isso através de um pull-request.
 
 
-Pull-Request.
+Pull-Request.-----------------------------------------------
 
 Pull Request é uma “Requisição de empurrão”. 
 Através dele pedimos para fundir o conteúdo de uma branch com outra.
