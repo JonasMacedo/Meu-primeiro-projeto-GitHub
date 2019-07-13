@@ -243,7 +243,8 @@ Com o sucesso, suas alterações foram enviadas para a master e, caso não precisar
 podemos deletar na mesma tela, pelo botão “Delete branch”.
 
 Para atualizamos nossa master local "Sua maquina" depois do merge, caso ela ainda esteja desatualizada, 
-podemos atualizar facilmente como comando:
+porem o arquivo ira vir com a formatação do GitHub.
+Podemos atualizar facilmente como comando:
 - git pull origin master
 
 Dessa forma, estamos atualizando nosso repositório local "Sua máquina" com o conteúdo da nossa master, 
@@ -252,3 +253,4 @@ se quisermos o conteúdo de outra branch, basta alterar de “master” para o nome d
 OBS.: É recomendado sempre deixar sua branch atualizada. Caso outra pessoa realizar uma alteração na master 
 e você não atualizar, isso irá gerar vários conflitos quando você tentar dar “merge” nas suas alterações com a master, 
 pois haverá informações na master que não estarão na sua.
+
