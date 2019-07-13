@@ -179,7 +179,7 @@ Para verificar nossas branchs ativas, usamos o comando:
 -git branch
 
 Ao verificar as branchs ativas.
-Repare que haverá um asterisco(*) na master na master ou em alguma branch, 
+Repare que haverá um asterisco(*) na master ou em alguma branch, 
 isso significa que o arquivo esta em USO. 
 
 Então vamos alterar para a branch utilizando o comando:
@@ -189,3 +189,31 @@ Através do git checkout podemos escolher qual branch queremos trabalhar.
 
 Podemos fazer isso tudo com esse único comando:
 - git checkout -b "NomeDaBranchDesejada"
+
+Após realizados os procedimentos, no git pelo seu terminal(CMD) ou bit-bash, realize as demais alterações 
+que desejar em seu projeto, e após realizar salveas e utilize os comandos do git normalmente 
+para altualizar para criar uma nova versão.
+
+Com o sucesso, enviamos as alterações para nossa branch e agora podemos enviar as informações salvas 
+na branch para o Github.
+
+Até o momento, só utilizamos o github com nossa branch master através do comando:
+- git push origin master. 
+
+Isso significa que estamos enviando as alterações de nosso repositório de origem para a master no Github. 
+Como dessa vez queremos utilizar nossa nova branch, o comando ficará assim:
+- git push origin "NomeDaBranch"
+
+Parabéns, conseguimos hospedar o nosso código no github em nossa própria branch.
+Nesse momento, se entrar no Github em nosso repositório, poderemos ver que temos 2 branchs.
+Ótimo, agora nossa atividade está terminada e já podemos adicionar essas alterações a master sem culpa. 
+E podemos fazer isso através de um pull-request.
+
+
+Pull-Request.
+
+Pull Request é uma “Requisição de empurrão”. 
+Através dele pedimos para fundir o conteúdo de uma branch com outra.
+Novamente na tela no nosso repositório do github, na opção branchs, 
+clicamos na opção “New Pull request” (ao lado da nossa branch).
+
