@@ -60,7 +60,7 @@ E receberemos uma resposta parecida com essa:
 Esse comando nos permite verificar o status dos nossos arquivos.
 Os arquivos que estiverem em VERMELHO são arquivos que nunca foram salvos no git 
 ou que tiveram alteração e essa alteração ainda não foi salva.
-Se estiver verde, significa que já foi salvo.
+Se estiver VERDE ou BRANCA, ou dependendo da configuração do seu terminal, significa que já foi salvo.
 
 03- Salvando.-------------------------------------------------------
 
@@ -215,8 +215,40 @@ E podemos fazer isso através de um pull-request.
 
 Pull-Request.-----------------------------------------------
 
-Pull Request é uma “Requisição de empurrão”. 
+Pull Request é uma “Requisição de empurrão”, o pull-request é realizado diretamente no GitHub. 
+
 Através dele pedimos para fundir o conteúdo de uma branch com outra.
-Novamente na tela no nosso repositório do github, na opção branchs, 
+Novamente na tela no nosso repositório do github, clicamos na opção branchs, e depois 
 clicamos na opção “New Pull request” (ao lado da nossa branch).
 
+Seremos direcionados a uma tela que compara o conteúdo de uma branch com a outra 
+e que nos dará a opção de alterar o nome do pull request e adicionar uma descrição.
+
+Na tela em que aparecer, o github irá verificar nossas duas branchs e nos avisar 
+caso haja algum conflito entre as duas, para que possamos corrigir. 
+Caso contrário nos dará permissão para fundir (merge) as duas branchs. 
+É nesse momento que temos a revisão (code review).
+
+OBS.: Code review é uma boa prática no desenvolvimento de software. 
+Ao criar um pull request, enviamos a URL para outros desenvolvedores, para que realizem uma revisão. 
+Se estiver tudo certo, eles aprovam o pull request; caso contrário eles realizam um comentário 
+em uma parte do código para ser corrigido, podendo só realizar o merge quando o pull request 
+tiver um certo número de aprovações, que é determinado pela equipe.
+Isso ajuda a evitar bugs e outras más práticas de desenvolvimento.
+
+Vamos imaginar que já recebemos o número necessário de aprovações 
+e vamos clicar em “merge pull request” e, em seguida, confirme.
+
+Com o sucesso, suas alterações foram enviadas para a master e, caso não precisar mais da branch,
+podemos deletar na mesma tela, pelo botão “Delete branch”.
+
+Para atualizamos nossa master local "Sua maquina" depois do merge, caso ela ainda esteja desatualizada, 
+podemos atualizar facilmente como comando:
+- git pull origin master
+
+Dessa forma, estamos atualizando nosso repositório local "Sua máquina" com o conteúdo da nossa master, 
+se quisermos o conteúdo de outra branch, basta alterar de “master” para o nome da outra branch.
+
+OBS.: É recomendado sempre deixar sua branch atualizada. Caso outra pessoa realizar uma alteração na master 
+e você não atualizar, isso irá gerar vários conflitos quando você tentar dar “merge” nas suas alterações com a master, 
+pois haverá informações na master que não estarão na sua.
