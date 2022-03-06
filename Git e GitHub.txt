@@ -126,5 +126,11 @@ Como no exemplo abaixo:
 
 Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
 
+---------------  06- Enviando o Commit para o GitHub ------------------------------------------------------------------------
 
+Então vamos enviar nossos arquivos para o github, através do seguinte comando:
+- git push origin master
+
+O git podera pedir seu usuário e sua senha do Github, após digitar irá começar o UpLoad dos arquivos para o oGitHub. 
+Feito isso o arquivo estara hospedado no GitHub.
 
