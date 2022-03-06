@@ -1,3 +1,5 @@
+
+
 Conteudo sobre Git
 
 Olá!! Se acessou esse arquivo é porque precisa de ajuda, talvez esse documento 
@@ -84,5 +86,27 @@ Esse comando nos permite verificar o status dos nossos arquivos.
 Os arquivos que estiverem em VERMELHO são arquivos que nunca foram salvos no git ou que tiveram alteração, e essa alteração ainda não foi salva.
 
 Se estiver VERDE ou BRANCA, ou dependendo da configuração do seu terminal, significa que já foi salvo.
+
+
+---------------  04- Salvando ------------------------------------------------------------------------
+
+Se arquivo está em vermelho, significa que esse arquivo não foi salvo no git.
+
+Para salvar basta utilizar o seguinte comando:
+- git add "NomeDoArquivo"
+
+Ou se quiser salvar todos os arquivos dentro da pasta:
+- git add .
+
+Ótimo, agora o arquivo esta salvo no Git, e já pode ser feito um COMMIT.
+
+Desta forma os arquivos estarao na area de STAGED, ou seja este arquivo ainda nao foi enviado para o Git esta apenas aguardando para ser enviado.
+
+Exemplo: 
+
+Como se fosse uma apresentacao de uma banda.
+Enquanto uma banda esta tocando, a outra estaria em STAGED, no caso seria chamando do camarim, e ficaria aguardado para entrar no palco.
+No caso o palco seria o COMMIT.
+
 
 
