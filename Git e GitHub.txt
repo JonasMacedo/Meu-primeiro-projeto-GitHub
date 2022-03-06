@@ -157,9 +157,8 @@ de outras pessoas.
 Então vamos enviar nossos arquivos para o github, através do seguinte comando:
 - git push origin master
 
-O git podera pedir seu usuário e sua senha do Github, após digitar irá começar o UpLoad dos arquivos para o oGitHub. 
+O git podera pedir seu usuário e sua senha do Github, após digitar irá começar o UpLoad dos arquivos para o GitHub. 
 Feito isso o arquivo estara hospedado no GitHub.
-
 
 ---------------  Resumo ------------------------------------------------------------------------
 
@@ -208,4 +207,44 @@ E ao final da atividade, realizar um pedido para adicionar as novas alterações
 esse pedido passará por uma revisão e, só após a revisão, podera ser adicionado as alterações a master.
 
 Pode parecer complicado, mas verá que na verdade é bem simples.
+
+---------------  10- Criando Branchs ------------------------------------------------------------------------
+
+Para criar nossa branch devemos dar um nome ela. 
+
+O comando deverá ficar assim:
+- git branch "Nome"
+
+Para verificar nossas branchs ativas, usamos o comando:
+-git branch
+
+Ao verificar as branchs ativas.
+Repare que haverá um asterisco(*) na master ou em alguma branch, isso significa que o arquivo esta em USO. 
+
+Então vamos alterar para a branch utilizando o comando:
+- git checkout "NomeDaBranchDesejada"  
+
+Através do "git checkout" podemos escolher qual branch queremos trabalhar.
+
+Podemos fazer isso tudo com esse único comando:
+- git checkout -b "NomeDaBranchDesejada"
+
+Após realizados os procedimentos, no git pelo seu terminal(CMD) ou bit-bash, realize as demais alterações 
+que desejar em seu projeto, e após realizar salve-as e utilize os comandos do git normalmente.
+
+Com o sucesso, enviamos as alterações para nossa branch e agora podemos enviar as informações salvas 
+na branch para o Github.
+
+Até o momento, só utilizamos o GitHub  com nossa branch master através do comando:
+- git push origin master. 
+
+Isso significa que estamos enviando as alterações de nosso repositório de origem para a master no Github. 
+Como dessa vez queremos utilizar nossa nova branch, o comando ficará assim:
+- git push origin "NomeDaBranch"
+
+Parabéns, conseguimos hospedar o nosso código no GitHub em nossa própria branch.
+Nesse momento, se entrar no Github em nosso repositório, poderemos ver que temos 2 branchs.
+
+Ótimo, agora nossa atividade está terminada e já podemos adicionar essas alterações a master sem culpa. 
+E podemos fazer isso através de um pull-request.
 
