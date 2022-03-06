@@ -1,48 +1,50 @@
-Olá!! Se acessou esse arquivo é porque precisa de ajuda, talvez esse documento 
+Conteudo sobre Git
+
+OlÃ¡!! Se acessou esse arquivo Ã© porque precisa de ajuda, talvez esse documento 
 lhe ajude. =D
 
-Git é uma ferramenta de controle de versões.
-Ele nos permite manter um histórico de todos os pontos de alterações 
-dos nossos projetos ou arquivos, permitindo também que cada pessoa 
-trabalhe em uma versão diferente do mesmo projeto, impedindo que, ao realizar 
-uma alteração, altere a versão que outra pessoa está trabalhando. 
-Dessa forma, caso haja algum erro, ele não irá refletir na versão de outra pessoa e, 
-se precisar, é só voltar para uma versão anterior em que o projeto 
-estava funcionando perfeitamente.
+Git Ã© uma ferramenta de controle de versÃµes.
 
-GitHub é um serviço web que permite hospedagens de projetos git.
-Ao hospedar um projeto no github, possibilitamos que todos os envolvidos ou interessados 
-no projeto tenham um acesso mais fácil e trabalhem de forma centralizada e organizada.
-Além disso, o github nos concede diversas ferramentas para um melhor controle do projeto, 
-como por exemplo, quais usuários o alteraram, o que foi alterando, e quando foi alterado, 
-possibilita também que os usuários relatem problemas e muito mais.
+Ele nos permite manter um histÃ³rico de todos os pontos de alteraÃ§Ãµes dos nossos projetos ou arquivos, permitindo tambÃ©m que cada pessoa trabalhe 
+em uma versÃ£o diferente do mesmo projeto, impedindo que, ao realizar uma alteraÃ§Ã£o, altere a versÃ£o que outra pessoa estÃ¡ trabalhando. 
+
+Dessa forma, caso haja algum erro, ele nÃ£o irÃ¡ refletir na versÃ£o de outra pessoa e, se precisar, Ã© sÃ³ voltar para uma versÃ£o anterior em que o 
+projeto estava funcionando perfeitamente.
+
+GitHub Ã© um serviÃ§o web que permite hospedagens de projetos git.
+
+Ao hospedar um projeto no github, possibilitamos que todos os envolvidos ou interessados no projeto tenham um acesso mais fÃ¡cil e trabalhem de 
+forma centralizada e organizada. 
+AlÃ©m disso, o github nos concede diversas ferramentas para um melhor controle do projeto, como por exemplo, quais usuÃ¡rios o alteraram, o que 
+foi alterando, e quando foi alterado, possibilita tambÃ©m que os usuÃ¡rios relatem problemas e muito mais.
 
 Por que usar o git e o github juntos?
-Pense que o git é quem fará o controle das versões dos seus projetos, 
-e o github será apenas o local em que você irá hospedar essas versões,
-para tornar acessível a outras pessoas.
+Pense que o git Ã© quem farÃ¡ o controle das versÃµes dos seus projetos, e o github serÃ¡ apenas o local em que vocÃª irÃ¡ hospedar essas versÃµes, para 
+tornar acessÃ­vel a outras pessoas.
+
+Atualizando.
 
 -------------------------------- Parte 01 ----------------------------------------------------------- 
 
 01- Usando o Git.
 
 Crie uma pasta com um nome qualquer, precisamos de alguma forma, 
-dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um repositório, 
+dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um repositï¿½rio, 
 para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
 
-Por meio do terminal(CMD) ou do git-bash, vá até a pasta criada e dentro dela digite o comando:
+Por meio do terminal(CMD) ou do git-bash, vï¿½ atï¿½ a pasta criada e dentro dela digite o comando:
 - git init
 
 E receberemos uma resposta parecida com essa:
 - Initialized empty Git repository in 
 	/home/"NomeDoUsuario"/Documentos/"NomeDaPastaCriada"/.git/
 
-Pronto! Criamos nosso primeiro repositório local e já podemos começar a trabalhar com o git, 
-em nossa máquina.
+Pronto! Criamos nosso primeiro repositï¿½rio local e jï¿½ podemos comeï¿½ar a trabalhar com o git, 
+em nossa mï¿½quina.
 
 02- Verificando.-------------------------------------------------------
 
-Para verifar o estado do(s) arquivo(s), se houve alterações ou não, usamos outro comando:
+Para verifar o estado do(s) arquivo(s), se houve alteraï¿½ï¿½es ou nï¿½o, usamos outro comando:
 - git status
 
 E receberemos uma resposta parecida com essa:
@@ -58,45 +60,45 @@ E receberemos uma resposta parecida com essa:
 	no changes added to commit (use "git add" and/or "git commit -a")
 
 Esse comando nos permite verificar o status dos nossos arquivos.
-Os arquivos que estiverem em VERMELHO são arquivos que nunca foram salvos no git 
-ou que tiveram alteração e essa alteração ainda não foi salva.
-Se estiver VERDE ou BRANCA, ou dependendo da configuração do seu terminal, significa que já foi salvo.
+Os arquivos que estiverem em VERMELHO sï¿½o arquivos que nunca foram salvos no git 
+ou que tiveram alteraï¿½ï¿½o e essa alteraï¿½ï¿½o ainda nï¿½o foi salva.
+Se estiver VERDE ou BRANCA, ou dependendo da configuraï¿½ï¿½o do seu terminal, significa que jï¿½ foi salvo.
 
 03- Salvando.-------------------------------------------------------
 
-Se arquivo está em vermelho, significa que esse arquivo não foi salvo no git.
+Se arquivo estï¿½ em vermelho, significa que esse arquivo nï¿½o foi salvo no git.
 para salvar basta utilizar o seguinte comando:
 - git add "NomeDoArquivo"
 
 Ou se quiser salvar todos os arquivos dentro da pasta:
 - git add .
 
-Ótimo, agora o arquivo esta salvo no Git, e já pode ser feito um COMMIT.
+ï¿½timo, agora o arquivo esta salvo no Git, e jï¿½ pode ser feito um COMMIT.
 
 
 04- Commitando.-------------------------------------------------------
 
-Um commit é simplesmente criar uma nova versão do nosso arquivo ou projeto. 
-Quando realizamos um commit, o git cria uma nova versão com os arquivos que estão salvos lá, 
+Um commit ï¿½ simplesmente criar uma nova versï¿½o do nosso arquivo ou projeto. 
+Quando realizamos um commit, o git cria uma nova versï¿½o com os arquivos que estï¿½o salvos lï¿½, 
 por isso, antes de fazer um commit devemos SEMPRE salvar os arquivos desejados, como visto acima. 
 
 Podemos fazer um commit com o comando a seguir:
 - git commit
 
-Nesse momento, o git abrirá uma nova tela pedindo para informar um comentário 
+Nesse momento, o git abrirï¿½ uma nova tela pedindo para informar um comentï¿½rio 
 para explicar do que se trata o commit.
 
 Mas podemos simplificar, informando a mensagem diretamente no comando. 
 Como no exemplo abaixo:
-- git commit -m "ComentárioExplicativoCurtoSobreCommit"
+- git commit -m "Comentï¿½rioExplicativoCurtoSobreCommit"
 
-Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
+Seguindo estes comandos corretamente, vocï¿½ terï¿½ feito um commit e criado uma nova versï¿½o.
 
 
 05- Relatorio de Commits.-----------------------------------------------
 
-Se quiser, pode verificar todos os commits já feitos no projeto, 
-através do comando:
+Se quiser, pode verificar todos os commits jï¿½ feitos no projeto, 
+atravï¿½s do comando:
 -git log
 
 Obs.: Util para verificar se seu commit realmente foi realizado corretamente.
@@ -106,151 +108,151 @@ Obs.: Util para verificar se seu commit realmente foi realizado corretamente.
 
 Resumo rapido.
 
-1- Verifique o estado do arquivo, e veja o que acontece, se houve alguma alteração.
+1- Verifique o estado do arquivo, e veja o que acontece, se houve alguma alteraï¿½ï¿½o.
 Comando: git status
 
 2- Salve o arquivo ou projeto modificado ou novo, se necessario.
 Comando: git add "NomeDoArquivo" 
 Comando se quiser salvar todos os arquivos dentro da pasta: git add .
 
-3- Arquivo salvo, só resta realizar o commit, criando uma nova verção no Git.
-Comando: git commit -m"ComentárioExplicativoCurtoSobreCommit"
+3- Arquivo salvo, sï¿½ resta realizar o commit, criando uma nova verï¿½ï¿½o no Git.
+Comando: git commit -m"Comentï¿½rioExplicativoCurtoSobreCommit"
 
-4- Verificar os commits já feito no projeto.
+4- Verificar os commits jï¿½ feito no projeto.
 Comando: git log
 
 -------------------------------- Parte 02 ----------------------------------------------------------- 
 
 Conectando respositorio local com o GitHub.
 
-Agora vamos conectar o nosso repositório LOCAL(sua maquina pessoal), 
-com o nosso repositório do GitHub(Servidor em nuvem) podemos fazer isso 
-através do git.
+Agora vamos conectar o nosso repositï¿½rio LOCAL(sua maquina pessoal), 
+com o nosso repositï¿½rio do GitHub(Servidor em nuvem) podemos fazer isso 
+atravï¿½s do git.
 
-Então, abra seu terminal(CMD) novamente ou seu git-bash, entre na pasta em que está o projeto 
+Entï¿½o, abra seu terminal(CMD) novamente ou seu git-bash, entre na pasta em que estï¿½ o projeto 
 e digite o comando a seguir:
 - git remote add origin <url do seu repositorio no git>
 
-Dessa forma nosso repositório local foi conectado ao nosso no github.
-Então vamos enviar nossos arquivos para o github, através do seguinte comando:
+Dessa forma nosso repositï¿½rio local foi conectado ao nosso no github.
+Entï¿½o vamos enviar nossos arquivos para o github, atravï¿½s do seguinte comando:
 - git push origin master
 
-O git irá pedir seu usuário e sua senha do Github, após digitar irá começar o upload. Feito isso 
+O git irï¿½ pedir seu usuï¿½rio e sua senha do Github, apï¿½s digitar irï¿½ comeï¿½ar o upload. Feito isso 
 o arquivo estara hospedado no GitHub.
 
 01- Clonando respositorio.-----------------------------------------------
 
-Agora quando precisar baixar seu projeto basta ir no github clicar em “Clone or download”.
+Agora quando precisar baixar seu projeto basta ir no github clicar em ï¿½Clone or downloadï¿½.
 
-Copiar a URL que aparecer e através do terminal(CMD) ou git-bash, entrar em uma pasta desejada 
+Copiar a URL que aparecer e atravï¿½s do terminal(CMD) ou git-bash, entrar em uma pasta desejada 
 e digitar o comando:
 - git clone <url do clone de seu repositorio no git>
 
-Dessa forma o git irá fazer o download do projeto para o seu computador. 
-Esse comando pode ser utilizado tanto nos seus repositórios, quanto nos repositórios públicos 
+Dessa forma o git irï¿½ fazer o download do projeto para o seu computador. 
+Esse comando pode ser utilizado tanto nos seus repositï¿½rios, quanto nos repositï¿½rios pï¿½blicos 
 de outras pessoas.
 
 -------------------------------- Parte 03 ----------------------------------------------------------- 
 
 Conceito de Ramos "Branchs".
 
-Uma outra funcionalidade interessante do git são os ramos ou “Branchs”.
-Branchs são como ambientes de desenvolvimento diferentes para o mesmo projeto ou arquivo.
+Uma outra funcionalidade interessante do git sï¿½o os ramos ou ï¿½Branchsï¿½.
+Branchs sï¿½o como ambientes de desenvolvimento diferentes para o mesmo projeto ou arquivo.
 
-Por padrão, no git, temos uma única branch chamada MASTER.
+Por padrï¿½o, no git, temos uma ï¿½nica branch chamada MASTER.
 
-Master é, por padrão, a branch principal, dentro dela sempre deve estar o último conteúdo confiável 
-do projeto ou arquivo, pois uma vez na master, essas alterações podem ser disponibilizadas ao público 
+Master ï¿½, por padrï¿½o, a branch principal, dentro dela sempre deve estar o ï¿½ltimo conteï¿½do confiï¿½vel 
+do projeto ou arquivo, pois uma vez na master, essas alteraï¿½ï¿½es podem ser disponibilizadas ao pï¿½blico 
 a qualquer momento.
 
-É uma boa prática criar uma nova Branch, sempre que trabalhar em uma nova atividade dentro do projeto, 
-commitar todas as novas versões dentro dessa nova branch.
+ï¿½ uma boa prï¿½tica criar uma nova Branch, sempre que trabalhar em uma nova atividade dentro do projeto, 
+commitar todas as novas versï¿½es dentro dessa nova branch.
 
-E ao final da atividade, realizar um pedido para adicionar as novas alterações dessa branch na master, 
-esse pedido passará por uma revisão e, só após a revisão, podera ser adicionado as alterações a master.
+E ao final da atividade, realizar um pedido para adicionar as novas alteraï¿½ï¿½es dessa branch na master, 
+esse pedido passarï¿½ por uma revisï¿½o e, sï¿½ apï¿½s a revisï¿½o, podera ser adicionado as alteraï¿½ï¿½es a master.
 
-Pode parecer complicado, mas verá que na verdade é bem simples.
+Pode parecer complicado, mas verï¿½ que na verdade ï¿½ bem simples.
 
 Usando Branchs. -----------------------------------------------
 
 Para criar nossa branch devemos dar um nome ela. 
-O comando deverá ficar assim:
+O comando deverï¿½ ficar assim:
 - git branch "Nome"
 
 Para verificar nossas branchs ativas, usamos o comando:
 -git branch
 
 Ao verificar as branchs ativas.
-Repare que haverá um asterisco(*) na master ou em alguma branch, 
+Repare que haverï¿½ um asterisco(*) na master ou em alguma branch, 
 isso significa que o arquivo esta em USO. 
 
-Então vamos alterar para a branch utilizando o comando:
+Entï¿½o vamos alterar para a branch utilizando o comando:
 - git checkout "NomeDaBranchDesejada"  
 
-Através do git checkout podemos escolher qual branch queremos trabalhar.
+Atravï¿½s do git checkout podemos escolher qual branch queremos trabalhar.
 
-Podemos fazer isso tudo com esse único comando:
+Podemos fazer isso tudo com esse ï¿½nico comando:
 - git checkout -b "NomeDaBranchDesejada"
 
-Após realizados os procedimentos, no git pelo seu terminal(CMD) ou bit-bash, realize as demais alterações 
-que desejar em seu projeto, e após realizar salveas e utilize os comandos do git normalmente 
-para altualizar para criar uma nova versão.
+Apï¿½s realizados os procedimentos, no git pelo seu terminal(CMD) ou bit-bash, realize as demais alteraï¿½ï¿½es 
+que desejar em seu projeto, e apï¿½s realizar salveas e utilize os comandos do git normalmente 
+para altualizar para criar uma nova versï¿½o.
 
-Com o sucesso, enviamos as alterações para nossa branch e agora podemos enviar as informações salvas 
+Com o sucesso, enviamos as alteraï¿½ï¿½es para nossa branch e agora podemos enviar as informaï¿½ï¿½es salvas 
 na branch para o Github.
 
-Até o momento, só utilizamos o github com nossa branch master através do comando:
+Atï¿½ o momento, sï¿½ utilizamos o github com nossa branch master atravï¿½s do comando:
 - git push origin master. 
 
-Isso significa que estamos enviando as alterações de nosso repositório de origem para a master no Github. 
-Como dessa vez queremos utilizar nossa nova branch, o comando ficará assim:
+Isso significa que estamos enviando as alteraï¿½ï¿½es de nosso repositï¿½rio de origem para a master no Github. 
+Como dessa vez queremos utilizar nossa nova branch, o comando ficarï¿½ assim:
 - git push origin "NomeDaBranch"
 
-Parabéns, conseguimos hospedar o nosso código no github em nossa própria branch.
-Nesse momento, se entrar no Github em nosso repositório, poderemos ver que temos 2 branchs.
+Parabï¿½ns, conseguimos hospedar o nosso cï¿½digo no github em nossa prï¿½pria branch.
+Nesse momento, se entrar no Github em nosso repositï¿½rio, poderemos ver que temos 2 branchs.
 
-Ótimo, agora nossa atividade está terminada e já podemos adicionar essas alterações a master sem culpa. 
-E podemos fazer isso através de um pull-request.
+ï¿½timo, agora nossa atividade estï¿½ terminada e jï¿½ podemos adicionar essas alteraï¿½ï¿½es a master sem culpa. 
+E podemos fazer isso atravï¿½s de um pull-request.
 
 
 Pull-Request.-----------------------------------------------
 
-Pull Request é uma “Requisição de empurrão”, o pull-request é realizado diretamente no GitHub. 
+Pull Request ï¿½ uma ï¿½Requisiï¿½ï¿½o de empurrï¿½oï¿½, o pull-request ï¿½ realizado diretamente no GitHub. 
 
-Através dele pedimos para fundir o conteúdo de uma branch com outra.
-Novamente na tela no nosso repositório do github, clicamos na opção branchs, e depois 
-clicamos na opção “New Pull request” (ao lado da nossa branch).
+Atravï¿½s dele pedimos para fundir o conteï¿½do de uma branch com outra.
+Novamente na tela no nosso repositï¿½rio do github, clicamos na opï¿½ï¿½o branchs, e depois 
+clicamos na opï¿½ï¿½o ï¿½New Pull requestï¿½ (ao lado da nossa branch).
 
-Seremos direcionados a uma tela que compara o conteúdo de uma branch com a outra 
-e que nos dará a opção de alterar o nome do pull request e adicionar uma descrição.
+Seremos direcionados a uma tela que compara o conteï¿½do de uma branch com a outra 
+e que nos darï¿½ a opï¿½ï¿½o de alterar o nome do pull request e adicionar uma descriï¿½ï¿½o.
 
-Na tela em que aparecer, o github irá verificar nossas duas branchs e nos avisar 
+Na tela em que aparecer, o github irï¿½ verificar nossas duas branchs e nos avisar 
 caso haja algum conflito entre as duas, para que possamos corrigir. 
-Caso contrário nos dará permissão para fundir (merge) as duas branchs. 
-É nesse momento que temos a revisão (code review).
+Caso contrï¿½rio nos darï¿½ permissï¿½o para fundir (merge) as duas branchs. 
+ï¿½ nesse momento que temos a revisï¿½o (code review).
 
-OBS.: Code review é uma boa prática no desenvolvimento de software. 
-Ao criar um pull request, enviamos a URL para outros desenvolvedores, para que realizem uma revisão. 
-Se estiver tudo certo, eles aprovam o pull request; caso contrário eles realizam um comentário 
-em uma parte do código para ser corrigido, podendo só realizar o merge quando o pull request 
-tiver um certo número de aprovações, que é determinado pela equipe.
-Isso ajuda a evitar bugs e outras más práticas de desenvolvimento.
+OBS.: Code review ï¿½ uma boa prï¿½tica no desenvolvimento de software. 
+Ao criar um pull request, enviamos a URL para outros desenvolvedores, para que realizem uma revisï¿½o. 
+Se estiver tudo certo, eles aprovam o pull request; caso contrï¿½rio eles realizam um comentï¿½rio 
+em uma parte do cï¿½digo para ser corrigido, podendo sï¿½ realizar o merge quando o pull request 
+tiver um certo nï¿½mero de aprovaï¿½ï¿½es, que ï¿½ determinado pela equipe.
+Isso ajuda a evitar bugs e outras mï¿½s prï¿½ticas de desenvolvimento.
 
-Vamos imaginar que já recebemos o número necessário de aprovações 
-e vamos clicar em “merge pull request” e, em seguida, confirme.
+Vamos imaginar que jï¿½ recebemos o nï¿½mero necessï¿½rio de aprovaï¿½ï¿½es 
+e vamos clicar em ï¿½merge pull requestï¿½ e, em seguida, confirme.
 
-Com o sucesso, suas alterações foram enviadas para a master e, caso não precisar mais da branch,
-podemos deletar na mesma tela, pelo botão “Delete branch”.
+Com o sucesso, suas alteraï¿½ï¿½es foram enviadas para a master e, caso nï¿½o precisar mais da branch,
+podemos deletar na mesma tela, pelo botï¿½o ï¿½Delete branchï¿½.
 
 Para atualizamos nossa master local "Sua maquina" depois do merge, caso ela ainda esteja desatualizada, 
-porem o arquivo ira vir com a formatação do GitHub.
+porem o arquivo ira vir com a formataï¿½ï¿½o do GitHub.
 Podemos atualizar facilmente como comando:
 - git pull origin master
 
-Dessa forma, estamos atualizando nosso repositório local "Sua máquina" com o conteúdo da nossa master, 
-se quisermos o conteúdo de outra branch, basta alterar de “master” para o nome da outra branch.
+Dessa forma, estamos atualizando nosso repositï¿½rio local "Sua mï¿½quina" com o conteï¿½do da nossa master, 
+se quisermos o conteï¿½do de outra branch, basta alterar de ï¿½masterï¿½ para o nome da outra branch.
 
-OBS.: É recomendado sempre deixar sua branch atualizada. Caso outra pessoa realizar uma alteração na master 
-e você não atualizar, isso irá gerar vários conflitos quando você tentar dar “merge” nas suas alterações com a master, 
-pois haverá informações na master que não estarão na sua.
+OBS.: ï¿½ recomendado sempre deixar sua branch atualizada. Caso outra pessoa realizar uma alteraï¿½ï¿½o na master 
+e vocï¿½ nï¿½o atualizar, isso irï¿½ gerar vï¿½rios conflitos quando vocï¿½ tentar dar ï¿½mergeï¿½ nas suas alteraï¿½ï¿½es com a master, 
+pois haverï¿½ informaï¿½ï¿½es na master que nï¿½o estarï¿½o na sua.
 
