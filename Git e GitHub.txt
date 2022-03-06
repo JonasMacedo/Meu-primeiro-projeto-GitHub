@@ -45,6 +45,23 @@ Para identificar a informacao de alguma chave
 - git config user.email 
 Por padrao retornara a contida para a chave
 
+---------------  02-Criando Repositorio ------------------------------------------------------------------------
+
+01- Usando o Git.
+
+Crie uma pasta com um nome qualquer, precisamos de alguma forma, dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um 
+repositório, para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
+
+Por meio do terminal(CMD) ou do git-bash, vá até a pasta criada e dentro dela digite o comando:
+- git init
+
+E receberemos uma resposta parecida com essa:
+- Initialized empty Git repository in 
+	/home/"NomeDoUsuario"/Documentos/"NomeDaPastaCriada"/.git/
+
+Pronto! Com o retorno INITIALIZED com o arquivo .git, significa que criamos nosso primeiro repositório local e já podemos começar a trabalhar 
+com o git 
+
 
 -------------------------------- Parte 01 ----------------------------------------------------------- 
 
