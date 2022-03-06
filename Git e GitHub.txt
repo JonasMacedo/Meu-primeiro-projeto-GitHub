@@ -108,5 +108,23 @@ Como se fosse uma apresentacao de uma banda.
 Enquanto uma banda esta tocando, a outra estaria em STAGED, no caso seria chamando do camarim, e ficaria aguardado para entrar no palco.
 No caso o palco seria o COMMIT.
 
+---------------  05- Commitando ------------------------------------------------------------------------
+
+Um commit é simplesmente criar uma nova versão do nosso arquivo ou projeto.
+
+Quando realizamos um commit, o git cria uma nova versão com os arquivos que estão salvos lá, por isso, antes de fazer um commit devemos SEMPRE 
+salvar os arquivos desejados, como visto acima. 
+
+Podemos fazer um commit com o comando a seguir:
+- git commit
+
+Nesse momento, o git abrirá uma nova tela pedindo para informar um comentário para explicar do que se trata o commit.
+
+Mas podemos simplificar, informando a mensagem diretamente no comando. 
+Como no exemplo abaixo:
+- git commit -m "ComentárioExplicativoCurtoSobreCommit"
+
+Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
+
 
 
