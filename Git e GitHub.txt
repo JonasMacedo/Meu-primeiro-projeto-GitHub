@@ -127,7 +127,6 @@ Como no exemplo abaixo:
 
 Seguindo estes comandos corretamente, você terá feito um commit e criado uma nova versão.
 
-
 ---------------  06- Conectando com o GitHub. ------------------------------------------------------------------------
 
 Conectando respositorio local com o GitHub, como ja mensionado o GitHub é um serviço web que permite hospedagens de 
@@ -140,7 +139,20 @@ Então, abra seu terminal(CMD) novamente ou seu git-bash, para isso basta copiar
 pasta em que está o projeto e digite o comando a seguir:
 - git remote add origin https://github.com/JonasMacedo/Meu-primeiro-projeto-GitHub.git
 
----------------  07- Enviando o Commit para o GitHub ------------------------------------------------------------------------
+---------------  07- Clonando respositorio do GitHub. ------------------------------------------------------------------------
+
+Agora quando precisar baixar seu projeto basta ir no GitHub clicar em “Clone or download”.
+
+Copiar a URL que aparecer, e através do terminal(CMD) ou git-bash, entrar ou criar uma pasta 
+e digitar o comando:
+- git clone https://github.com/JonasMacedo/Meu-primeiro-projeto-GitHub.git
+
+Dessa forma o git irá fazer o download do projeto para o seu computador. 
+
+Esse comando pode ser utilizado tanto nos seus repositórios, quanto nos repositórios públicos 
+de outras pessoas.
+
+---------------  08- Enviando o Commit para o GitHub ------------------------------------------------------------------------
 
 Então vamos enviar nossos arquivos para o github, através do seguinte comando:
 - git push origin master
@@ -156,18 +168,22 @@ Resumo rapido.
 1- Conectar o respositorio local com o GitHub
 Comando: git remote add origin https://github.com/JonasMacedo/Meu-primeiro-projeto-GitHub.git
 
-2- Verifique o estado do arquivo, e veja o que acontece, se houve alguma alteração.
+
+2- Clonar o projeto do GitHub para sua maquina.
+Comando: git clone https://github.com/JonasMacedo/Meu-primeiro-projeto-GitHub.git
+
+3- Verifique o estado do arquivo, e veja o que acontece, se houve alguma alteração.
 Comando: git status
 
-3- Salve o arquivos ou projetos modificados ou novos, se necessario.
+4- Salve o arquivos ou projetos modificados ou novos, se necessario.
 Comando: git add "NomeDoArquivo" 
 Comando se quiser salvar todos os arquivos dentro da pasta: git add .
 
-4- Arquivo salvo, só resta realizar o commit, criando uma nova versao no Git, porem ainda estara localmente em sua maquina.
+5- Arquivo salvo, só resta realizar o commit, criando uma nova versao no Git, porem ainda estara localmente em sua maquina.
 Comando: git commit -m "ComentárioExplicativoCurtoSobreCommit"
 
-5- Então vamos enviar os arquivos para o GitHub na web, através do seguinte comando:
+6- Então vamos enviar os arquivos para o GitHub na web, através do seguinte comando:
 Comando: git push origin master
 
-6- Verificar os commits já feito no projeto.
+7- Verificar os commits já feito no projeto.
 Comando: git log
