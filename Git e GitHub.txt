@@ -22,7 +22,29 @@ Por que usar o git e o github juntos?
 Pense que o git é quem fará o controle das versões dos seus projetos, e o github será apenas o local em que você irá hospedar essas versões, para 
 tornar acessível a outras pessoas.
 
-Atualizando.
+---------------  01- Configurando o Git ------------------------------------------------------------------------
+
+Git
+
+O download do Git pode ser realizado pelo link https://git-scm.com/download/win
+
+Os comanddos a seguir poderam ser realizado no CMD ou git-bash.
+
+Para identifica todas as informacao do Git:
+- git config --list
+Retornara todas as informacoes do Git.
+
+Para configurar o usuario no Git:
+- git config --global user.name "XXXXX XXXX"
+
+Para configurar o usuario no email: 
+- git config --global user.email "XXXXX @ XXXX"
+
+Para identificar a informacao de alguma chave
+- git config user.name 
+- git config user.email 
+Por padrao retornara a contida para a chave
+
 
 -------------------------------- Parte 01 ----------------------------------------------------------- 
 
