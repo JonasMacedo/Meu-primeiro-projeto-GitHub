@@ -49,8 +49,8 @@ Por padrao retornara a contida para a chave
 
 01- Usando o Git.
 
-Crie uma pasta com um nome qualquer, precisamos de alguma forma, dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um 
-repositório, para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
+Crie uma pasta com um nome qualquer, precisamos de alguma forma, dizer que iremos utilizar o git nessa pasta, ou seja, 
+devemos fazer dela um repositório, para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
 
 Por meio do terminal(CMD) ou do git-bash, vá até a pasta criada e dentro dela digite o comando:
 - git init
@@ -59,31 +59,12 @@ E receberemos uma resposta parecida com essa:
 - Initialized empty Git repository in 
 	/home/"NomeDoUsuario"/Documentos/"NomeDaPastaCriada"/.git/
 
-Pronto! Com o retorno INITIALIZED com o arquivo .git, significa que criamos nosso primeiro repositório local e já podemos começar a trabalhar 
-com o git 
+Pronto! Com o retorno INITIALIZED com o arquivo .git, significa que criamos nosso primeiro repositório local e já podemos 
+começar a trabalhar com o git 
 
+---------------  03- Verificando ------------------------------------------------------------------------
 
--------------------------------- Parte 01 ----------------------------------------------------------- 
-
-01- Usando o Git.
-
-Crie uma pasta com um nome qualquer, precisamos de alguma forma, 
-dizer que iremos utilizar o git nessa pasta, ou seja, devemos fazer dela um reposit�rio, 
-para trabalharmos nela com o git e podemos fazer isso da seguinte maneira:
-
-Por meio do terminal(CMD) ou do git-bash, v� at� a pasta criada e dentro dela digite o comando:
-- git init
-
-E receberemos uma resposta parecida com essa:
-- Initialized empty Git repository in 
-	/home/"NomeDoUsuario"/Documentos/"NomeDaPastaCriada"/.git/
-
-Pronto! Criamos nosso primeiro reposit�rio local e j� podemos come�ar a trabalhar com o git, 
-em nossa m�quina.
-
-02- Verificando.-------------------------------------------------------
-
-Para verifar o estado do(s) arquivo(s), se houve altera��es ou n�o, usamos outro comando:
+Para verifar o estado do(s) arquivo(s), se houve alterações ou não, usamos outro comando:
 - git status
 
 E receberemos uma resposta parecida com essa:
@@ -99,199 +80,9 @@ E receberemos uma resposta parecida com essa:
 	no changes added to commit (use "git add" and/or "git commit -a")
 
 Esse comando nos permite verificar o status dos nossos arquivos.
-Os arquivos que estiverem em VERMELHO s�o arquivos que nunca foram salvos no git 
-ou que tiveram altera��o e essa altera��o ainda n�o foi salva.
-Se estiver VERDE ou BRANCA, ou dependendo da configura��o do seu terminal, significa que j� foi salvo.
 
-03- Salvando.-------------------------------------------------------
+Os arquivos que estiverem em VERMELHO são arquivos que nunca foram salvos no git ou que tiveram alteração, e essa alteração ainda não foi salva.
 
-Se arquivo est� em vermelho, significa que esse arquivo n�o foi salvo no git.
-para salvar basta utilizar o seguinte comando:
-- git add "NomeDoArquivo"
+Se estiver VERDE ou BRANCA, ou dependendo da configuração do seu terminal, significa que já foi salvo.
 
-Ou se quiser salvar todos os arquivos dentro da pasta:
-- git add .
-
-�timo, agora o arquivo esta salvo no Git, e j� pode ser feito um COMMIT.
-
-
-04- Commitando.-------------------------------------------------------
-
-Um commit � simplesmente criar uma nova vers�o do nosso arquivo ou projeto. 
-Quando realizamos um commit, o git cria uma nova vers�o com os arquivos que est�o salvos l�, 
-por isso, antes de fazer um commit devemos SEMPRE salvar os arquivos desejados, como visto acima. 
-
-Podemos fazer um commit com o comando a seguir:
-- git commit
-
-Nesse momento, o git abrir� uma nova tela pedindo para informar um coment�rio 
-para explicar do que se trata o commit.
-
-Mas podemos simplificar, informando a mensagem diretamente no comando. 
-Como no exemplo abaixo:
-- git commit -m "Coment�rioExplicativoCurtoSobreCommit"
-
-Seguindo estes comandos corretamente, voc� ter� feito um commit e criado uma nova vers�o.
-
-
-05- Relatorio de Commits.-----------------------------------------------
-
-Se quiser, pode verificar todos os commits j� feitos no projeto, 
-atrav�s do comando:
--git log
-
-Obs.: Util para verificar se seu commit realmente foi realizado corretamente.
-
-
-06- Resumo.-------------------------------------------------------
-
-Resumo rapido.
-
-1- Verifique o estado do arquivo, e veja o que acontece, se houve alguma altera��o.
-Comando: git status
-
-2- Salve o arquivo ou projeto modificado ou novo, se necessario.
-Comando: git add "NomeDoArquivo" 
-Comando se quiser salvar todos os arquivos dentro da pasta: git add .
-
-3- Arquivo salvo, s� resta realizar o commit, criando uma nova ver��o no Git.
-Comando: git commit -m"Coment�rioExplicativoCurtoSobreCommit"
-
-4- Verificar os commits j� feito no projeto.
-Comando: git log
-
--------------------------------- Parte 02 ----------------------------------------------------------- 
-
-Conectando respositorio local com o GitHub.
-
-Agora vamos conectar o nosso reposit�rio LOCAL(sua maquina pessoal), 
-com o nosso reposit�rio do GitHub(Servidor em nuvem) podemos fazer isso 
-atrav�s do git.
-
-Ent�o, abra seu terminal(CMD) novamente ou seu git-bash, entre na pasta em que est� o projeto 
-e digite o comando a seguir:
-- git remote add origin <url do seu repositorio no git>
-
-Dessa forma nosso reposit�rio local foi conectado ao nosso no github.
-Ent�o vamos enviar nossos arquivos para o github, atrav�s do seguinte comando:
-- git push origin master
-
-O git ir� pedir seu usu�rio e sua senha do Github, ap�s digitar ir� come�ar o upload. Feito isso 
-o arquivo estara hospedado no GitHub.
-
-01- Clonando respositorio.-----------------------------------------------
-
-Agora quando precisar baixar seu projeto basta ir no github clicar em �Clone or download�.
-
-Copiar a URL que aparecer e atrav�s do terminal(CMD) ou git-bash, entrar em uma pasta desejada 
-e digitar o comando:
-- git clone <url do clone de seu repositorio no git>
-
-Dessa forma o git ir� fazer o download do projeto para o seu computador. 
-Esse comando pode ser utilizado tanto nos seus reposit�rios, quanto nos reposit�rios p�blicos 
-de outras pessoas.
-
--------------------------------- Parte 03 ----------------------------------------------------------- 
-
-Conceito de Ramos "Branchs".
-
-Uma outra funcionalidade interessante do git s�o os ramos ou �Branchs�.
-Branchs s�o como ambientes de desenvolvimento diferentes para o mesmo projeto ou arquivo.
-
-Por padr�o, no git, temos uma �nica branch chamada MASTER.
-
-Master �, por padr�o, a branch principal, dentro dela sempre deve estar o �ltimo conte�do confi�vel 
-do projeto ou arquivo, pois uma vez na master, essas altera��es podem ser disponibilizadas ao p�blico 
-a qualquer momento.
-
-� uma boa pr�tica criar uma nova Branch, sempre que trabalhar em uma nova atividade dentro do projeto, 
-commitar todas as novas vers�es dentro dessa nova branch.
-
-E ao final da atividade, realizar um pedido para adicionar as novas altera��es dessa branch na master, 
-esse pedido passar� por uma revis�o e, s� ap�s a revis�o, podera ser adicionado as altera��es a master.
-
-Pode parecer complicado, mas ver� que na verdade � bem simples.
-
-Usando Branchs. -----------------------------------------------
-
-Para criar nossa branch devemos dar um nome ela. 
-O comando dever� ficar assim:
-- git branch "Nome"
-
-Para verificar nossas branchs ativas, usamos o comando:
--git branch
-
-Ao verificar as branchs ativas.
-Repare que haver� um asterisco(*) na master ou em alguma branch, 
-isso significa que o arquivo esta em USO. 
-
-Ent�o vamos alterar para a branch utilizando o comando:
-- git checkout "NomeDaBranchDesejada"  
-
-Atrav�s do git checkout podemos escolher qual branch queremos trabalhar.
-
-Podemos fazer isso tudo com esse �nico comando:
-- git checkout -b "NomeDaBranchDesejada"
-
-Ap�s realizados os procedimentos, no git pelo seu terminal(CMD) ou bit-bash, realize as demais altera��es 
-que desejar em seu projeto, e ap�s realizar salveas e utilize os comandos do git normalmente 
-para altualizar para criar uma nova vers�o.
-
-Com o sucesso, enviamos as altera��es para nossa branch e agora podemos enviar as informa��es salvas 
-na branch para o Github.
-
-At� o momento, s� utilizamos o github com nossa branch master atrav�s do comando:
-- git push origin master. 
-
-Isso significa que estamos enviando as altera��es de nosso reposit�rio de origem para a master no Github. 
-Como dessa vez queremos utilizar nossa nova branch, o comando ficar� assim:
-- git push origin "NomeDaBranch"
-
-Parab�ns, conseguimos hospedar o nosso c�digo no github em nossa pr�pria branch.
-Nesse momento, se entrar no Github em nosso reposit�rio, poderemos ver que temos 2 branchs.
-
-�timo, agora nossa atividade est� terminada e j� podemos adicionar essas altera��es a master sem culpa. 
-E podemos fazer isso atrav�s de um pull-request.
-
-
-Pull-Request.-----------------------------------------------
-
-Pull Request � uma �Requisi��o de empurr�o�, o pull-request � realizado diretamente no GitHub. 
-
-Atrav�s dele pedimos para fundir o conte�do de uma branch com outra.
-Novamente na tela no nosso reposit�rio do github, clicamos na op��o branchs, e depois 
-clicamos na op��o �New Pull request� (ao lado da nossa branch).
-
-Seremos direcionados a uma tela que compara o conte�do de uma branch com a outra 
-e que nos dar� a op��o de alterar o nome do pull request e adicionar uma descri��o.
-
-Na tela em que aparecer, o github ir� verificar nossas duas branchs e nos avisar 
-caso haja algum conflito entre as duas, para que possamos corrigir. 
-Caso contr�rio nos dar� permiss�o para fundir (merge) as duas branchs. 
-� nesse momento que temos a revis�o (code review).
-
-OBS.: Code review � uma boa pr�tica no desenvolvimento de software. 
-Ao criar um pull request, enviamos a URL para outros desenvolvedores, para que realizem uma revis�o. 
-Se estiver tudo certo, eles aprovam o pull request; caso contr�rio eles realizam um coment�rio 
-em uma parte do c�digo para ser corrigido, podendo s� realizar o merge quando o pull request 
-tiver um certo n�mero de aprova��es, que � determinado pela equipe.
-Isso ajuda a evitar bugs e outras m�s pr�ticas de desenvolvimento.
-
-Vamos imaginar que j� recebemos o n�mero necess�rio de aprova��es 
-e vamos clicar em �merge pull request� e, em seguida, confirme.
-
-Com o sucesso, suas altera��es foram enviadas para a master e, caso n�o precisar mais da branch,
-podemos deletar na mesma tela, pelo bot�o �Delete branch�.
-
-Para atualizamos nossa master local "Sua maquina" depois do merge, caso ela ainda esteja desatualizada, 
-porem o arquivo ira vir com a formata��o do GitHub.
-Podemos atualizar facilmente como comando:
-- git pull origin master
-
-Dessa forma, estamos atualizando nosso reposit�rio local "Sua m�quina" com o conte�do da nossa master, 
-se quisermos o conte�do de outra branch, basta alterar de �master� para o nome da outra branch.
-
-OBS.: � recomendado sempre deixar sua branch atualizada. Caso outra pessoa realizar uma altera��o na master 
-e voc� n�o atualizar, isso ir� gerar v�rios conflitos quando voc� tentar dar �merge� nas suas altera��es com a master, 
-pois haver� informa��es na master que n�o estar�o na sua.
 
