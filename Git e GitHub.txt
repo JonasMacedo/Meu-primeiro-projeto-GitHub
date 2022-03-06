@@ -187,3 +187,25 @@ Comando: git push origin master
 
 7- Verificar os commits já feito no projeto.
 Comando: git log
+
+---------------  09- Branchs ------------------------------------------------------------------------
+
+Conceito de Ramos "Branchs".
+
+Uma outra funcionalidade interessante do git são os ramos ou “Branchs”.
+Branchs são como ambientes de desenvolvimento diferentes para o mesmo projeto ou arquivo.
+
+Por padrão, no git, temos uma única branch chamada MASTER.
+
+Master é, por padrão, a branch principal, dentro dela sempre deve estar o último conteúdo confiável 
+do projeto ou arquivo, pois uma vez na master, essas alterações podem ser disponibilizadas ao público 
+a qualquer momento.
+
+É uma boa prática criar uma nova Branch, sempre que trabalhar em uma nova atividade dentro do projeto, 
+commitar todas as novas versões dentro dessa nova branch.
+
+E ao final da atividade, realizar um pedido para adicionar as novas alterações dessa branch na master, 
+esse pedido passará por uma revisão e, só após a revisão, podera ser adicionado as alterações a master.
+
+Pode parecer complicado, mas verá que na verdade é bem simples.
+
